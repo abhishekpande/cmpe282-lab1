@@ -1,0 +1,2 @@
+class Computercatalog < ActiveRecord::Base
+end

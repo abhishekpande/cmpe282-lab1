@@ -1,0 +1,23 @@
+<div class="cart_title">Your Cart</div>
+<ul>
+<% for item in @cart.line_items %>
+<li><%= item.quantity %> &times; <%= item.product.title %></li>
+<% end %>
+</ul>
+<table>
+
+<% for item in @cart.line_items %>
+
+
+<tr>
+<td><%= item.quantity %>&times;</td>
+<td><%= item.product.title %></td>
+<% end %>
+<tr class="total_line">
+<td colspan="2">Total</td>
+</table>
+
+<%= button_to "Checkout", new_order_url, :method=>:get %>
+<%= button_to 'Empty cart', @cart, :method => :delete,
+:confirm => 'Are you sure?' %>
+

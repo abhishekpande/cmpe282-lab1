@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customcatalog.name %>
+</p>
+
+<p>
+  <strong>Features:</strong>
+  <%= @customcatalog.features %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @customcatalog.quantity %>
+</p>
+
+<%= link_to 'Edit', edit_customcatalog_path(@customcatalog) %> |
+<%= link_to 'Back', customcatalogs_path %>

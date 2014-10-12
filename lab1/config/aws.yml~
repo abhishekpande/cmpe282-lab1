@@ -1,0 +1,12 @@
+development: 
+  access_key_id: AKIAIQBEDD6NPIGC5Y3A
+  secret_access_key: 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
+  dynamo_db_endpoint: dynamodb.us-west-2.amazonaws.com
+production: 
+  access_key_id: AKIAIQBEDD6NPIGC5Y3A
+  secret_access_key: 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
+  dynamo_db_endpoint: dynamodb.us-west-2.amazonaws.com
+test: 
+  access_key_id: AKIAIQBEDD6NPIGC5Y3A
+  secret_access_key: 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
+  dynamo_db_endpoint: dynamodb.us-west-2.amazonaws.com

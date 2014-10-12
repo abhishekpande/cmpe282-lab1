@@ -1,0 +1,24 @@
+
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Your Pragmatic Catalog</h1>
+
+<a href="http://localhost:3000/carts"><button style="width:120;height:25">Your Carts</button></a>
+
+<% @products.each do |product| %>
+<div class="entry">
+<%= image_tag(product.image_url) %>
+<h3><%= product.title %></h3>
+<%=sanitize product.description %>
+<div class="price_line">
+<span class="price"><%= number_to_currency(product.price) %></span>
+<%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
+</div>
+</div>
+
+
+<a href="http://localhost:3000/carts"><button style="width:120;height:25">Your Carts</button></a>
+
+<% end %>
