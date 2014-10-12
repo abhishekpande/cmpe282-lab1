@@ -40,9 +40,6 @@ gem 'psych'
 
 gem 'passenger', '~> 4.0.53'
 
-gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
-gem 'bson_ext'
-
 gem 'dynamoid'
 
 gem 'aws-sdk'
